@@ -1,0 +1,4 @@
+FROM node:latest
+RUN useradd -d /code -m -s /bin/bash dev && echo "dev:dev" | chpasswd && adduser dev sudo
+RUN chown -R dev:dev /code
+USER dev
