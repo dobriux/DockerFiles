@@ -33,7 +33,7 @@ services:
       - default
 
   symfony.node:
-    image: dobriux/docker:symfony.node
+    image: dobriux/docker:node
     volumes:
       - ./../:/code
     networks:
